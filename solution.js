@@ -35,7 +35,7 @@ app.post("/", async (req, res) => {
     res.render("solution.ejs", {
       data: result[Math.floor(Math.random() * result.length)],
     });
-  } catch (error) {
+  } catch(error) {
     console.error("Failed to make request:", error.message);
     res.render("solution.ejs", {
       error: "No activities that match your criteria.",
